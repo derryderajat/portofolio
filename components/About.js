@@ -3,8 +3,13 @@ import { motion } from 'framer-motion';
 // https://res.cloudinary.com/dwlyoi4wy/image/upload/v1664624382/private/IMG_20221001_183854_etzd5n.jpg
 function About() {
   return (
-    <div className='flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center relative h-screen'>
-      <h3 className='absolute top-24 uppercase tracking-[20px= text-[#444444] text-2xl'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className='flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center relative h-screen'
+    >
+      <h3 className='absolute  top-24 uppercase tracking-[20px= text-[#444444] text-2xl'>
         About
       </h3>
       <motion.img
@@ -14,13 +19,13 @@ function About() {
         transition={{ duration: 1.2 }}
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
-        className='mb-10 md:mb-0 flex-shrink-0 w-32 h-32 rounded-full object-cover md:rounded-lg xl:w-64 xl:h-96 md:w-52 md:h-48'
+        className='mb-2 mt-24 md:mt-0 md:mb-0 flex-shrink-0 w-32 h-32 rounded-full object-cover md:rounded-lg xl:w-64 xl:h-96 md:w-52 md:h-48 z-20'
         src='https://res.cloudinary.com/dwlyoi4wy/image/upload/v1664624382/private/IMG_20221001_183854_etzd5n.jpg'
       />
       <div className='space-y-10 px-10 md:px-10'>
-        <h4 className='text-4xl font-semibold'>
+        <h4 className='text-3xl font-semibold'>
           Here is a
-          <span className='underline decoration-[#F7Ab0a]/50'>little </span>
+          <span className='underline decoration-[#F7Ab0a]/50'> little </span>
           background
         </h4>
         <p className='text-base'>
@@ -34,7 +39,7 @@ function About() {
           visualization and build a model ML
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
