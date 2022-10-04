@@ -1,13 +1,29 @@
-import Script from 'next/script';
 import { useTheme } from 'next-themes';
 import Head from 'next/head';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import WorkExperience from '../components/WorkExperience';
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
-import ContactMe from '../components/ContactMe';
+import dynamic from 'next/dynamic';
+
+const Header = dynamic(() => import('../components/Header'), {
+  ssr: false,
+});
+const Hero = dynamic(() => import('../components/Hero'), {
+  ssr: false,
+});
+const WorkExperience = dynamic(() => import('../components/WorkExperience'), {
+  ssr: false,
+});
+const Skills = dynamic(() => import('../components/Skills'), {
+  ssr: false,
+});
+const Projects = dynamic(() => import('../components/Header'), {
+  ssr: false,
+});
+const ContactMe = dynamic(() => import('../components/ContactMe'), {
+  ssr: false,
+});
+const About = dynamic(() => import('../components/About'), {
+  ssr: false,
+});
+
 export default function Home() {
   const { theme, setTheme } = useTheme();
   return (
