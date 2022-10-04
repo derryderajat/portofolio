@@ -1,6 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Skill from './Skill';
+import dynamic from 'next/dynamic';
+const Skill = dynamic(() => import('./Skill'), {
+  ssr: false,
+});
+
 function Skills() {
   return (
     <motion.div className='h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center'>

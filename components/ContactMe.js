@@ -6,7 +6,7 @@ function ContactMe() {
       <h3 className='absolute top-24 uppercase tracking-[20px] text-[#444444] text-2xl'>
         Contact
       </h3>
-      <div className='flex flex-col space-y-10'>
+      <div className='flex flex-col space-y-10 mt-12'>
         <h4 className='text-4xl font-semibold text-center'>
           I have got just what you need.
           <span className='decoration-[#F78b0a]/50 underline'>
