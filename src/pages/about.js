@@ -45,19 +45,20 @@ function about() {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi there, I'm Derry Derajat, a seasoned Fullstack Developer and
-                Software QA Specialist with a passion for creating exceptional
-                digital solutions that combine both functionality and quality.
-                With 2 years of experience in the industry, I have honed my
-                skills in web development, Android app development, and
+                Hi there, I&apos;m Derry Derajat, a seasoned Fullstack Developer
+                and Software QA Specialist with a passion for creating
+                exceptional digital solutions that combine both functionality
+                and quality. With 2 years of experience in the industry, I have
+                honed my skills in web development, Android app development, and
                 comprehensive testing practices.
               </p>
               <p className="my-4 font-medium">
                 As a Fullstack Developer, I love tackling challenges and finding
-                innovative ways to bring my clients' visions to life. I firmly
-                believe that design and functionality go hand in hand, and I
-                strive to create user-centered digital experiences that are not
-                only visually appealing but also intuitive and enjoyable to use.
+                innovative ways to bring my clients&apos; visions to life. I
+                firmly believe that design and functionality go hand in hand,
+                and I strive to create user-centered digital experiences that
+                are not only visually appealing but also intuitive and enjoyable
+                to use.
               </p>
               <p className="font-medium">
                 When it comes to Software Quality Assurance, my dedication to
@@ -67,16 +68,16 @@ function about() {
                 tested and meets the highest standards of excellence.
               </p>
               <p className="my-4 font-medium">
-                Whether I'm coding a website, crafting an Android app, or
+                Whether I&apos;m coding a website, crafting an Android app, or
                 conducting comprehensive testing, my primary focus is on solving
                 problems and exceeding expectations. I approach every project
                 with a commitment to excellence, professionalism, and a
                 user-centered mindset.
               </p>
               <p className="font-medium">
-                I'm excited about the opportunity to contribute my skills and
-                passion to your next project. Let's collaborate and create
-                outstanding digital experiences together!
+                I&apos;m excited about the opportunity to contribute my skills
+                and passion to your next project. Let&apos;s collaborate and
+                create outstanding digital experiences together!
               </p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
