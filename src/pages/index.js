@@ -14,7 +14,7 @@ export default function Home() {
         <title>Derry</title>
         <meta name="description" content="Derry's web portofolio" />
       </Head>
-      <main className="flex items-center text-dark min-h-screen">
+      <main className="flex items-center text-dark min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-betweem w-full">
             <div className="w-1/2">
@@ -40,7 +40,15 @@ export default function Home() {
                 <Link
                   href={"/Resume-Derry.pdf"}
                   target="_blank"
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark hover:bg-light border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark hover:bg-light border-2 border-solid border-transparent hover:border-dark
+                  dark:bg-light
+                  dark:text-dark
+                  hover:dark:text-light
+                  hover:dark:bg-dark
+                  hover:dark:border-light
+
+                  
+                  "
                   download={true}
                 >
                   Resume
@@ -49,9 +57,9 @@ export default function Home() {
                 <Link
                   href={"mailto:derryd.derajat@gmail.com"}
                   target="_blank"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
                 >
-                  Contact{" "}
+                  Contact
                 </Link>
               </div>
             </div>
@@ -60,6 +68,10 @@ export default function Home() {
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24">
           <Image
+            priority
+            sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
             src={lightBulb}
             alt="Derry Derajat"
             className="w-full h-auto"
