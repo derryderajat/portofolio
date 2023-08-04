@@ -11,7 +11,7 @@ function Footer() {
           Build with <span className="text-primary text-2xl px-1">&#9825;</span>{" "}
           by &nbsp;
           <Link
-            href={"https://derryderajat.me"}
+            href={"https://derry.in"}
             className="underline underline-offset-2"
             target="_blank"
           >
@@ -19,7 +19,7 @@ function Footer() {
           </Link>
         </div>
         <Link
-          href={"/"}
+          href={"https://wa.me/6289677816465"}
           className="underline underline-offset-2"
           target="_blank"
         >
