@@ -49,7 +49,7 @@ const MovingImg = ({ title, img, link }) => {
         alt={title}
         height={600}
         width={600}
-        className="w-96 h-auto hidden absolute rounded-lg z-10"
+        className="w-96 h-auto hidden absolute rounded-lg z-10 md:!hidden"
       />
     </Link>
   );
@@ -62,10 +62,12 @@ const Articles = ({ img, title, date, link }) => {
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between
-       bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 bordder-b-4 dark:bg-dark dark:text-light dark:border-light"
+       bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 bordder-b-4 dark:bg-dark dark:text-light dark:border-light sm:flex-col"
     >
       <MovingImg img={img} title={title} link={link} />
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary font-semibold pl-4 sm:self-start sm:pl-0 xs:text-sm">
+        {date}
+      </span>
     </motion.li>
   );
 };
@@ -93,7 +95,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline xs:text-lg">
           {title}
         </h2>
         <p className="text-sm mb-2">{summary}</p>
@@ -117,10 +119,10 @@ function articles() {
         <Layout className="pt-16">
           <AnimatedText
             text={"Words Can Change The World!"}
-            className="mb-16"
+            className="mb-16  lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 
-          <ul className="grid grid-cols-2 gap-16">
+          <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
             <FeaturedArticle
               title={
                 "Pendahuluan Machine Learning: part-1 (Bagaimana Sebuah Model Bekerja) | by Kaggle Course"
