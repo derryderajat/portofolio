@@ -122,7 +122,11 @@ function articles() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <meta name="title" content="Derry Derajat" />
+        <meta
+          name="keywords"
+          content="Derry Derajat, Articles, Data Science, Machine Learning, Web Development, Informative Reads, Pendahuluan Machine Learning, Kaggle Course, Eksplorasi Data, Supervised Machine Learning"
+        />
+        <meta name="author" content="Derry Derajat" />
       </Head>
 
       <main className="w-full mb-16 flex flex-col items-start justify-center overflow-hidden dark:text-light">

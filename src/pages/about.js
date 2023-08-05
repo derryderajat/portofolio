@@ -37,12 +37,15 @@ function about() {
     <>
       <Head>
         <title>Derry Derajat | Fullstack Developer | Software QA</title>
-        <meta name="title" content="Derry Derajat" />
+        <meta name="author" content="Derry Derajat" />
         <meta
           name="description"
           content="I am Derry Derajat, a Fullstack Developer and Software QA  with 2 years of experience in web and Android app development."
         />
-
+        <meta
+          name="keywords"
+          content="Derry Derajat, Fullstack Developer, Software QA, Web Development, Android App Development, Digital Solutions, User-Centered Design, Software Quality Assurance, Thorough Testing, Problem Solving, Professionalism"
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"

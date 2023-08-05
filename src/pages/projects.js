@@ -141,7 +141,11 @@ function projects() {
     <>
       <Head>
         <title>Derry Derajat | Portfolio Projects</title>
-        <meta name="title" content="Derry Derajat" />
+        <meta name="author" content="Derry Derajat" />
+        <meta
+          name="keywords"
+          content="Derry Derajat, Portfolio, Projects, Mobile App, Web Applications, Featured Projects, Tour App, Cimporong PLN Project, Pen-dekin, Shortener URL"
+        />
         <meta
           name="description"
           content="Explore Derry Derajat's portfolio projects, including a mobile app, web applications, and more. Get insights into the development and implementation of these featured projects."

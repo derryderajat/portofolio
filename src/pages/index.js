@@ -13,12 +13,15 @@ export default function Home() {
     <>
       <Head>
         <title>Derry | Fullstack Developer and Software QA</title>
-        <meta name="title" content="Derry Derajat" />
+        <meta name="author" content="Derry Derajat" />
         <meta
           name="description"
           content="Welcome to Derry Portofolio WeB. I am fullstack developer and Software QA"
         />
-
+        <meta
+          name="keywords"
+          content="Derry, Portfolio, Web, Fullstack Developer, Software QA"
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
