@@ -12,10 +12,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Derry</title>
+        <title>Derry | Fullstack Developer and Software QA</title>
+        <meta name="title" content="Derry Derajat" />
         <meta
           name="description"
-          content="Welcome to Derry Derajat's Web Portfolio. Explore a collection of innovative web applications and software quality assurance projects created with full stack expertise. Check out the latest articles and projects showcasing a passion for technology and quality."
+          content="Welcome to Derry Portofolio WeB. I am fullstack developer and Software QA"
         />
 
         <meta
@@ -52,7 +53,7 @@ export default function Home() {
                 itemType="http://schema.org/Person"
               >
                 <Link
-                  href={"/Resume-Derry.pdf"}
+                  href={"Resume-Derry.pdf"}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark hover:bg-light border-2 border-solid border-transparent hover:border-dark

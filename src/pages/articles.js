@@ -122,6 +122,7 @@ function articles() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
+        <meta name="title" content="Derry Derajat" />
       </Head>
 
       <main className="w-full mb-16 flex flex-col items-start justify-center overflow-hidden dark:text-light">

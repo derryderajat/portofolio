@@ -141,7 +141,7 @@ function projects() {
     <>
       <Head>
         <title>Derry Derajat | Portfolio Projects</title>
-
+        <meta name="title" content="Derry Derajat" />
         <meta
           name="description"
           content="Explore Derry Derajat's portfolio projects, including a mobile app, web applications, and more. Get insights into the development and implementation of these featured projects."
