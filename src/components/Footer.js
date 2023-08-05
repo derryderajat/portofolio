@@ -14,6 +14,7 @@ function Footer() {
           </span>{" "}
           by &nbsp;
           <Link
+            rel="noopener noreferrer"
             href={"https://derry.in"}
             className="underline underline-offset-2"
             target="_blank"
@@ -22,6 +23,7 @@ function Footer() {
           </Link>
         </div>
         <Link
+          rel="noopener noreferrer"
           href={"https://wa.me/6289677816465"}
           className="underline underline-offset-2"
           target="_blank"

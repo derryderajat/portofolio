@@ -13,7 +13,15 @@ export default function Home() {
     <>
       <Head>
         <title>Derry</title>
-        <meta name="description" content="Derry's web portofolio" />
+        <meta
+          name="description"
+          content="Welcome to Derry Derajat's Web Portfolio. Explore a collection of innovative web applications and software quality assurance projects created with full stack expertise. Check out the latest articles and projects showcasing a passion for technology and quality."
+        />
+
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark min-h-screen dark:text-light">
@@ -38,9 +46,14 @@ export default function Home() {
                 the highest quality standards.Explore my latest projects and
                 articles
               </p>
-              <div className="flex items-center self-start mt-2 lg:self-center">
+              <div
+                className="flex items-center self-start mt-2 lg:self-center"
+                itemScope
+                itemType="http://schema.org/Person"
+              >
                 <Link
                   href={"/Resume-Derry.pdf"}
+                  rel="noopener noreferrer"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark hover:bg-light border-2 border-solid border-transparent hover:border-dark
                   dark:bg-light
@@ -58,8 +71,10 @@ export default function Home() {
                   <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
+                  itemProp="email"
                   href={"mailto:derryd.derajat@gmail.com"}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                 >
                   Contact

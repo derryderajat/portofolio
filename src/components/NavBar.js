@@ -129,6 +129,7 @@ function NavBar() {
               target="_blank"
               className="w-6 mr-3 rounded-full bg-light dark:bg-dark sm:mx-1"
               whileHover={{ y: -2 }}
+              rel="noopener noreferrer"
               whileTap={{ scale: 0.9 }}
             >
               <GithubIcon />
@@ -136,6 +137,7 @@ function NavBar() {
             <motion.a
               href={"https://www.linkedin.com/in/derryderajat/"}
               target="_blank"
+              rel="noopener noreferrer"
               className="w-6 mx-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
@@ -144,8 +146,9 @@ function NavBar() {
             </motion.a>
 
             <motion.a
-              href={"/"}
+              href={"https://www.instagram.com/fl1pder/"}
               target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-2 ml-3 sm:mx-1 "

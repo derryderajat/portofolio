@@ -36,8 +36,16 @@ function about() {
   return (
     <>
       <Head>
-        <title>Derry Derajat | About Page</title>
-        <meta name="description" content="any description" />
+        <title>Derry Derajat | Fullstack Developer | Software QA</title>
+        <meta
+          name="description"
+          content="I am Derry Derajat, a Fullstack Developer and Software QA  with 2 years of experience in web and Android app development."
+        />
+
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
@@ -46,18 +54,22 @@ function about() {
             text={"Passion Fuels Purpose!"}
             className="mb-16 lg:!text-7xl sm:text-!6xl xs:!text-4xl sm:mb-6"
           />
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+          <div
+            className="grid w-full grid-cols-8 gap-16 sm:gap-8"
+            itemScope
+            itemType="http://schema.org/Person"
+          >
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
                 Biography
               </h2>
-              <p className="font-medium">
-                Hi there, I&apos;m Derry Derajat, a seasoned Fullstack Developer
-                and Software QA Specialist with a passion for creating
-                exceptional digital solutions that combine both functionality
-                and quality. With 2 years of experience in the industry, I have
-                honed my skills in web development, Android app development, and
-                comprehensive testing practices.
+              <p className="font-medium" itemProp="description">
+                Hi there, I&apos;m <span itemProp="name">Derry Derajat</span>, a
+                seasoned Fullstack Developer and Software QA with a passion for
+                creating exceptional digital solutions that combine both
+                functionality and quality. With 2 years of experience in the
+                industry, I have honed my skills in web development, Android app
+                development, and comprehensive testing practices.
               </p>
               <p className="my-4 font-medium">
                 As a Fullstack Developer, I love tackling challenges and finding
