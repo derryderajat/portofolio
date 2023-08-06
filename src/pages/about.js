@@ -52,7 +52,7 @@ function about() {
         ></meta>
       </Head>
       <TransitionEffect />
-      <main className="flex w-full flex-col items-center justify-center dark:text-light">
+      <main className="flex w-full flex-col items-center justify-center text-dark dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text={"Passion Fuels Purpose!"}

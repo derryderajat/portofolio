@@ -138,7 +138,7 @@ function NavBar() {
               href={"https://www.linkedin.com/in/derryderajat/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 mx-3 sm:mx-1"
+              className="w-6 mx-3 sm:mx-1 rounded-full"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -151,9 +151,9 @@ function NavBar() {
               rel="noopener noreferrer"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-2 ml-3 sm:mx-1 "
+              className="w-2 ml-3 sm:mx-1"
             >
-              <InstagramIcon />
+              <InstagramIcon className="rounded-full" />
             </motion.a>
           </nav>
         </motion.div>
@@ -161,10 +161,26 @@ function NavBar() {
       {/* Desktop */}
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
-          <CustomLink href="/" title={"Home"} className="mr-4" />
-          <CustomLink href="/about" title={"About"} className="mx-4" />
-          <CustomLink href="/projects" title={"Projects"} className="mx-4" />
-          <CustomLink href="/articles" title={"Articles"} className="ml-4" />
+          <CustomLink
+            href="/"
+            title={"Home"}
+            className="mr-4 text-dark dark:text-light"
+          />
+          <CustomLink
+            href="/about"
+            title={"About"}
+            className="mx-4 text-dark dark:text-light"
+          />
+          <CustomLink
+            href="/projects"
+            title={"Projects"}
+            className="mx-4 text-dark dark:text-light"
+          />
+          <CustomLink
+            href="/articles"
+            title={"Articles"}
+            className="ml-4 text-dark dark:text-light"
+          />
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
@@ -180,7 +196,7 @@ function NavBar() {
           <motion.a
             href={"https://github.com/derryderajat"}
             target="_blank"
-            className="w-6 mx-3"
+            className="w-6 mx-3 text-dark dark:text-light"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >

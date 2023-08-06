@@ -39,7 +39,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         />
       </Link>
       <div className="w-1/2  flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <span className="text-primary dark:text-dark font-medium text-xl xs:text-base">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
           {type}
         </span>
         <Link
@@ -48,7 +48,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm">
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm text-dark dark:text-light">
             {title}
           </h2>
         </Link>
@@ -60,7 +60,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             href={github}
             rel="noopener noreferrer"
             target="_blank"
-            className="w-10"
+            className="w-10 text-dark dark:text-light"
           >
             <GithubIcon />
           </Link>
@@ -109,7 +109,7 @@ const Project = ({ type, title, img, link, github }) => {
           rel="noopener noreferrer"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl text-dark dark:text-light">
             {title}
           </h2>
         </Link>
@@ -119,7 +119,7 @@ const Project = ({ type, title, img, link, github }) => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-lg font-semibold underline md:text-base"
+            className="text-lg font-semibold underline md:text-base text-dark dark:text-light"
           >
             Visit
           </Link>
@@ -127,7 +127,7 @@ const Project = ({ type, title, img, link, github }) => {
             href={github}
             rel="noopener noreferrer"
             target="_blank"
-            className="w-8 md:w-6"
+            className="w-8 md:w-6 text-dark dark:text-light"
           >
             <GithubIcon />
           </Link>

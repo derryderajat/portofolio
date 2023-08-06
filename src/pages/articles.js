@@ -6,6 +6,7 @@ import Link from "next/link";
 import React, { useRef } from "react";
 
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -128,7 +129,7 @@ function articles() {
         />
         <meta name="author" content="Derry Derajat" />
       </Head>
-
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-start justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
