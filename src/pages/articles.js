@@ -98,10 +98,10 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link rel="noopener noreferrer" href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline xs:text-lg">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline xs:text-lg text-dark dark:text-light">
           {title}
         </h2>
-        <p className="text-sm mb-2">{summary}</p>
+        <p className="text-sm mb-2 text-dark dark:text-light">{summary}</p>
         <span className="text-primary font-semibold dark:text-primaryDark">
           {time}
         </span>
@@ -130,7 +130,7 @@ function articles() {
         <meta name="author" content="Derry Derajat" />
       </Head>
       <TransitionEffect />
-      <main className="w-full mb-16 flex flex-col items-start justify-center overflow-hidden dark:text-light">
+      <main className="w-full mb-16 flex flex-col items-start justify-center overflow-hidden text-dark dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text={"Words Can Change The World!"}
@@ -180,7 +180,7 @@ function articles() {
               }
             />
           </ul>
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 text-dark dark:text-light">
             All Articles
           </h2>
           <ul>
