@@ -20,7 +20,7 @@ function HireMe() {
           hover:dark:border-light
           md:w-12 md:h-12 md:text-[10px]"
         >
-          Hire Me
+          Get in touch
         </Link>
       </div>
     </div>
