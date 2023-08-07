@@ -18,9 +18,9 @@ function HireMe() {
           hover:dark:text-light
           hover:dark:bg-dark
           hover:dark:border-light
-          md:w-12 md:h-12 md:text-[10px]"
+          md:w-12 md:h-12 md:text-[10px] text-center"
         >
-          Get in touch
+          Get In Touch
         </Link>
       </div>
     </div>
