@@ -35,7 +35,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Derry"
-                className="w-full h-auto rounded-md lg:hidden md:inline-block md:w-full"
+                className="rounded-md inline-block"
               />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full">

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
@@ -58,8 +58,31 @@ function NavBar() {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+  const handleDocumentClick = (event) => {
+    // Dapatkan elemen navbar
+    const navbar = document.querySelector(".navbar");
+
+    // Periksa apakah elemen yang diklik bukanlah bagian dari navbar
+    if (navbar && !navbar.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Tambahkan event listener ke elemen document saat komponen dimount
+    document.addEventListener("click", handleDocumentClick);
+
+    // Bersihkan event listener saat komponen di-unmount
+    return () => {
+      document.removeEventListener("click", handleDocumentClick);
+    };
+  }, [isOpen]);
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between bg-light dark:bg-dark dark:text-light relative md:px-12">
+    <header
+      className={`${
+        isOpen ? "cursor-pointer" : "cursor-default"
+      } navbar w-full px-32 py-8 font-medium flex items-center justify-between bg-light dark:bg-dark dark:text-light relative md:px-12`}
+    >
       {/* Hamburger */}
 
       <button
@@ -67,19 +90,19 @@ function NavBar() {
         onClick={handleClick}
       >
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 block h-0.5 w-6 rounded-sm -translate-y-0.5  ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm -translate-y-0.5  ${
+            isOpen ? "rotate-45 translate-y-1 -my-1" : "-translate-y-0.5"
           }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 block h-0.5 w-6 rounded-sm my-0.5 ${
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm  my-0.5 ${
             isOpen ? "opacity-0" : "opacity-100"
           }
         `}
         ></span>
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 block h-0.5 w-6 rounded-sm translate-y-0.5  ${
-            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-out block h-0.5 w-6 rounded-sm translate-y-0.5 ${
+            isOpen ? "-rotate-45  -translate-y-1 -my-0.5" : "translate-y-0.5"
           }`}
         ></span>
       </button>
@@ -159,7 +182,7 @@ function NavBar() {
         </motion.div>
       ) : null}
       {/* Desktop */}
-      <div className="w-full flex justify-between items-center lg:hidden">
+      <div className="w-full flex justify-between items-center lg:hidden ">
         <nav>
           <CustomLink
             href="/"
