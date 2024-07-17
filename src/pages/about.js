@@ -68,9 +68,9 @@ function about() {
                 Biography
               </h2>
               <p className="font-medium" itemProp="description">
-                Hi there, I&apos;m <span itemProp="name">Derry Derajat</span>, Hi there! I'm Derry Derajat, a QA professional
+                Hi there, I&apos;m <span itemProp="name">Derry Derajat</span>, Hi there! I&apos;m Derry Derajat, a QA professional
                 Specializing in crafting test artifacts.
-                Proficient in Jira, Trello, and spreadsheets for project management, as well as selenium for automation, and SQL for database management. Let's connect for inquiries or collaboration!
+                Proficient in Jira, Trello, and spreadsheets for project management, as well as selenium for automation, and SQL for database management. Let&apos;s connect for inquiries or collaboration!
               </p>
 
             </div>

@@ -45,8 +45,8 @@ export default function Home() {
               />
 
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-              Hi there! I'm Derry Derajat, a QA professional
-              specializing in crafting test artifacts. Proficient in Jira, Trello, and spreadsheets for project management, as well as selenium  for automation, and SQL for database management. Let's connect for inquiries or collaboration!
+              Hi there! I&apos;m Derry Derajat, a QA professional
+              specializing in crafting test artifacts. Proficient in Jira, Trello, and spreadsheets for project management, as well as selenium  for automation, and SQL for database management. Let&apos;s connect for inquiries or collaboration!
               </p>
               <div
                 className="flex items-center self-start mt-2 lg:self-center"
