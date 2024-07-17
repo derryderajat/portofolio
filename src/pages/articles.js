@@ -112,7 +112,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
 };
 
 
-function articles() {
+function ArticlesPage() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
@@ -209,4 +209,4 @@ function articles() {
   );
 }
 
-export default articles;
+export default ArticlesPage;
