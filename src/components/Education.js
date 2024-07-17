@@ -45,11 +45,20 @@ function Education() {
             className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top md:w-[2px] md:left-[30px] xs:left-[20px]"
           />
           <Details
-            type={"IT Engineer"}
-            time={"2019-2023"}
+            type={"Information Technology"}
+            time={"2019 - 2023"}
             place={"Serang Raya University"}
             info={
-              "Bachelor of Informatics Engineering | GPA: 3.9 | Research: Tours Recommendation System Using Apriori Haversine  "
+              "Bachelor of Informatics Engineering | GPA: 3.94 | Research: Tours Recommendation System Using Apriori Haversine  "
+            }
+          />
+
+          <Details
+            type={"FGA - Quality Assurance"}
+            time={"March 2023 - April 2023"}
+            place={"Binar Academy"}
+            info={
+              "Learn QA Fundamental| Testing principle, Bug Reporting, Agile & Deployment | Grade: 95.6"
             }
           />
         </ul>

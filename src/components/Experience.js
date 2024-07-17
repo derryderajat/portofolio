@@ -52,6 +52,16 @@ function Experience() {
             className="absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top
             md:w-[2px] md:left-[30px] xs:left-[20px]"
           />
+            <Details
+            position={"Software QA"}
+            company={"PT. Krakatau Information Technology"}
+            companyLink={"https://krakatau-it.co.id/"}
+            time={"December 2023 - July 2024"}
+            address={"Cilegon, Banten"}
+            work={
+              "Experienced in crafting test plans, test cases, and detailed bug reports for thorough QA. Proficient with Jira, Trello, and Confluence for seamless project and document management, ensuring efficient collaboration. Skilled in Katalon for automation testing to streamline processes and boost productivity. Familiar with SQL for effective database management, ensuring data integrity. Industry experience includes banking and healthcare sectors, providing insights into specific industry challenges and requirements."
+            }
+          />
           <Details
             position={"Internship QA"}
             company={"FGA-Binar Academy"}

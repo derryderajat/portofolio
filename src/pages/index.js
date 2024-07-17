@@ -12,15 +12,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Derry | Fullstack Developer and Software QA</title>
+        <title>Derry | Software QA</title>
         <meta name="author" content="Derry Derajat" />
         <meta
           name="description"
-          content="Welcome to Derry Portofolio WeB. I am fullstack developer and Software QA"
+          content="Welcome to my page"
         />
         <meta
           name="keywords"
-          content="Derry, Portfolio, Web, Fullstack Developer, Software QA"
+          content="Derry, Software QA"
         />
         <meta
           name="viewport"
@@ -40,15 +40,13 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full">
               <AnimatedText
-                text={"Uniting Quality Assurance and Fullstack Prowess!"}
+                text={"Software Quality Assurance"}
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
 
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                As a full stack developer and SQA, I am dedicated to turning
-                ideas into innovative web applications and making sure they meet
-                the highest quality standards.Explore my latest projects and
-                articles
+              Hi there! I'm Derry Derajat, a QA professional
+              specializing in crafting test artifacts. Proficient in Jira, Trello, and spreadsheets for project management, as well as selenium  for automation, and SQL for database management. Let's connect for inquiries or collaboration!
               </p>
               <div
                 className="flex items-center self-start mt-2 lg:self-center"
@@ -56,7 +54,7 @@ export default function Home() {
                 itemType="http://schema.org/Person"
               >
                 <Link
-                  href={"Resume-Derry.pdf"}
+                  href={"Profile.pdf"}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark hover:bg-light border-2 border-solid border-transparent hover:border-dark

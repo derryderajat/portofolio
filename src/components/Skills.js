@@ -34,17 +34,17 @@ function Skills() {
         "
           whileHover={{ scale: 1.05 }}
         >
-          WEB
+          QA
         </motion.div>
-        <Skill name={"HTML"} x="18vw" y="2vw" />
-        <Skill name={"CSS"} x="-5vw" y="22vw" />
-        <Skill name={"Javascript"} x="-22vw" y="0vw" />
-        <Skill name={"NextJS"} x="0vw" y="12vw" />
-        <Skill name={"GIT"} x="0vw" y="-15vw" />
-        <Skill name={"Python"} x="30vw" y="-5vw" />
-        <Skill name={"Figma"} x="-15vw" y="-12vw" />
-        <Skill name={"Flutter"} x="18vw" y="18vw" />
-        <Skill name={"Cypress"} x="-25vw" y="18vw" />
+        <Skill name={"Test Plan"} x="18vw" y="2vw" />
+        <Skill name={"Test Scenario"} x="-5vw" y="22vw" />
+        <Skill name={"Test Case"} x="-22vw" y="0vw" />
+        <Skill name={"Test API"} x="0vw" y="12vw" />
+        <Skill name={"Bug Reporting"} x="0vw" y="-15vw" />
+        <Skill name={"Postman"} x="30vw" y="-5vw" />
+        <Skill name={"Selenium"} x="-15vw" y="-12vw" />
+        <Skill name={"Python"} x="18vw" y="18vw" />
+        <Skill name={"SQL"} x="-25vw" y="18vw" />
       </div>
     </>
   );

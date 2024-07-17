@@ -4,7 +4,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
-
+import articlesData from "../../public/articles/articles.json"
+import { useState, useEffect } from "react";
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -110,7 +111,14 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
   );
 };
 
+
 function articles() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    // Fetch data (if needed), or simply set it from imported JSON
+    setArticles(articlesData);
+  }, []);
   return (
     <>
       <Head>
@@ -184,65 +192,17 @@ function articles() {
             All Articles
           </h2>
           <ul>
-            <Articles
-              title={
-                "Alhamdulillaah, terimakasih atas diberikannya kesempatan untuk mengikuti dan menyelesaikan pelatihan Quality Assurance yang diadakan oleh Digital Talent Scholarship dan Binar Academy"
-              }
-              date={"3 mo"}
-              link={
-                "https://www.linkedin.com/posts/derryderajat_completion-training-fga-binar-academy-activity-7061941886915133440-ivAN?utm_source=share&utm_medium=member_desktop"
-              }
-              img={
-                "https://media.licdn.com/dms/image/D561FAQH0F489gm1xvg/feedshare-document-images_480/1/1683697931979?e=1692230400&v=beta&t=I_mNr_-JDCxRUft--PK33vLbY38Iw-S-nYJ-Gh5sNgo"
-              }
-            />
-            <Articles
-              title={
-                "I’m happy to share that I’ve obtained a new certification: Data Science Nexus – DSBIZ Certification CertNexus from"
-              }
-              date={"11 mo"}
-              link={
-                "https://www.linkedin.com/posts/derryderajat_dsbiz-certificate-activity-6981440489749192704--FJD?utm_source=share&utm_medium=member_desktop"
-              }
-              img={
-                "https://media.licdn.com/dms/image/D561FAQEIjyyWfJyrfA/feedshare-document-images_480/1/1664505071221?e=1692230400&v=beta&t=P6OPQlbcCikFNfi47ZiMz1lLJhXfNCU6tsQa7dIILI8"
-              }
-            />
-            <Articles
-              title={"Frontend Website for providing latest data of covid-19"}
-              date={"1 yr"}
-              link={
-                "https://www.linkedin.com/posts/derryderajat_react-kampusmerdeka-msib-activity-6920215921282211840-LIxI?utm_source=share&utm_medium=member_desktop"
-              }
-              img={
-                "https://media.licdn.com/dms/image/C5622AQHKGwinrikXkg/feedshare-shrink_800/0/1649908046200?e=1694044800&v=beta&t=9xZ7ZDt0atVP4-ZkwEQDhOv3-RLrcJUX3aPFiKuSs1g"
-              }
-            />
-            <Articles
-              title={
-                "Thanks to BISA AI Academy (PT BISA ARTIFISIAL INDONESIA), suatu kehormatan bisa mengisi di salah satu webinar menggunakan platform tampil.id"
-              }
-              date={"2 yr"}
-              link={
-                "https://www.linkedin.com/posts/derryderajat_machinelearning-bisaai-webinar-activity-6787969728238411776-piMJ?utm_source=share&utm_medium=member_desktop"
-              }
-              img={
-                "https://media.licdn.com/dms/image/C4E22AQHE1YLItOWQKw/feedshare-shrink_800/0/1618378081234?e=1694044800&v=beta&t=_iTmK9rFL3M-EGSYiDp652sp-2F0TxBGYL8oVIRHoa4"
-              }
-            />
-            <Articles
-              title={
-                "Tetap semangat tuk terus menimba ilmu. The journey has begun."
-              }
-              date={"2 yr"}
-              link={
-                "https://www.linkedin.com/posts/derryderajat_brihacakton-dataanalytics-machinelearning-activity-6842973403100577792-QKK6?utm_source=share&utm_medium=member_desktop"
-              }
-              img={
-                "https://media.licdn.com/dms/image/C4E22AQH1Fn4Mu8CPDw/feedshare-shrink_2048_1536/0/1631491994909?e=1694044800&v=beta&t=wvAmvPI63-Ui_GXU8uLI-_h88j9pzXnuof4DDo_pLKo"
-              }
-            />
-          </ul>
+        {articles.map((article, index) => (
+          <Articles
+            key={index} // Assuming index is unique, otherwise use a unique ID
+            title={article.title}
+            date={article.date}
+            link={article.link}
+            img={article.img}
+          />
+        ))}
+      </ul>
+
         </Layout>
       </main>
     </>

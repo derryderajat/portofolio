@@ -121,11 +121,11 @@ function NavBar() {
               href="/about"
               title={"About"}
             />
-            <CustomMobileLink
+            {/* <CustomMobileLink
               toggle={handleClick}
               href="/projects"
               title={"Projects"}
-            />
+            /> */}
             <CustomMobileLink
               toggle={handleClick}
               href="/articles"
@@ -168,7 +168,7 @@ function NavBar() {
               <LinkedInIcon />
             </motion.a>
 
-            <motion.a
+            {/* <motion.a
               href={"https://www.instagram.com/fl1pder/"}
               target="_blank"
               rel="noopener noreferrer"
@@ -177,7 +177,7 @@ function NavBar() {
               className="w-2 ml-3 sm:mx-1"
             >
               <InstagramIcon className="rounded-full" />
-            </motion.a>
+            </motion.a> */}
           </nav>
         </motion.div>
       ) : null}
@@ -194,11 +194,11 @@ function NavBar() {
             title={"About"}
             className="mx-4 text-dark dark:text-light"
           />
-          <CustomLink
+          {/* <CustomLink
             href="/projects"
             title={"Projects"}
             className="mx-4 text-dark dark:text-light"
-          />
+          /> */}
           <CustomLink
             href="/articles"
             title={"Articles"}
@@ -214,7 +214,7 @@ function NavBar() {
             whileTap={{ scale: 0.9 }}
             className="w-2 mr-10"
           >
-            <InstagramIcon />
+            {/* <InstagramIcon /> */}
           </motion.a>
           <motion.a
             href={"https://github.com/derryderajat"}
